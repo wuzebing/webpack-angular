@@ -1,0 +1,248 @@
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12 no-padding">
+        <div class="col-md-11 col-sm-11 col-xs-11"></div>
+        <div class="col-md-1 col-sm-1 col-xs-1">
+            <button id="compose" class="btn btn-sm btn-success btn-block pull-right" ng-click="searchInfo()"
+                    type="button">查询
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12 no-padding">
+        <div class="x_panel min-padding">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="count_conent">
+                    <div class="count_top">
+                        <div class="tit">
+                            <span class="left">过去一周的每日有购买用户数</span>
+                            <span class="right">按天</span>
+                        </div>
+                        <div class="desc">
+                            <span class="left">2017-4-13 至 2017-4-19 | 过去7天</span>
+                            <span class="right">
+                                <i class="fa fa-line-chart active"></i>
+                                <i class="fa fa-bar-chart"></i>
+                                <i class="fa fa-table"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="sper">
+                        <i class="fa fa-caret-left"></i>
+                        <span class="sper_span">4-17(一)</span>
+                        <i class="fa fa-caret-right"></i>
+                    </div>
+                    <div class="cont">
+                        <span class="count_num">11777<span class="unit">人</span></span>
+                        <div class="show">
+                            <highchart config="chartConfig5" style="height:200px;"></highchart>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="count_conent">
+                    <div class="count_top">
+                        <div class="tit">
+                            <span class="left">过去一周的每日有购买用户数</span>
+                            <span class="right">按天</span>
+                        </div>
+                        <div class="desc">
+                            <span class="left">2017-4-13 至 2017-4-19 | 过去7天</span>
+                            <span class="right">
+                                <i class="fa fa-line-chart"></i>
+                                <i class="fa fa-bar-chart active"></i>
+                                <i class="fa fa-table"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="sper">
+                        <i class="fa fa-caret-left"></i>
+                        <span class="sper_span">4-17(一)</span>
+                        <i class="fa fa-caret-right"></i>
+                    </div>
+                    <div class="cont">
+                        <span class="count_num">11777<span class="unit">人</span></span>
+                        <div class="show">
+                            <highchart config="chartConfig6" style="height:200px;"></highchart>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12 no-padding">
+        <div class="x_panel min-padding">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="count_conent">
+                    <div class="count_top">
+                        <div class="tit">
+                            <span class="left">过去一周的每日有购买用户数</span>
+                            <span class="right">按天</span>
+                        </div>
+                        <div class="desc">
+                            <span class="left">2017-4-13 至 2017-4-19 | 过去7天</span>
+                            <span class="right">
+                                <i class="fa fa-line-chart active"></i>
+                                <i class="fa fa-bar-chart"></i>
+                                <i class="fa fa-table"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="sper">
+                        <i class="fa fa-caret-left"></i>
+                        <span class="sper_span">4-17(一)</span>
+                        <i class="fa fa-caret-right"></i>
+                    </div>
+                    <div class="cont">
+                        <span class="count_num">11777<span class="unit">人</span></span>
+                        <div class="show">
+                            <highchart config="chartConfig5" style="height:200px;"></highchart>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="count_conent">
+                    <div class="count_top">
+                        <div class="tit">
+                            <span class="left">过去一周的每日有购买用户数</span>
+                            <span class="right">按天</span>
+                        </div>
+                        <div class="desc">
+                            <span class="left">2017-4-13 至 2017-4-19 | 过去7天</span>
+                            <span class="right">
+                                <i class="fa fa-line-chart"></i>
+                                <i class="fa fa-bar-chart active"></i>
+                                <i class="fa fa-table"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="sper">
+                        <i class="fa fa-caret-left"></i>
+                        <span class="sper_span">4-17(一)</span>
+                        <i class="fa fa-caret-right"></i>
+                    </div>
+                    <div class="cont">
+                        <span class="count_num">11777<span class="unit">人</span></span>
+                        <div class="show">
+                            <highchart config="chartConfig6" style="height:200px;"></highchart>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12 no-padding">
+        <div class="x_panel">
+            <div class="col-md-2 col-sm-12 col-xs-12">
+                <input daterangepicker type="daterange" ng-model="dates1" ranges="ranges" change="dataRangeChange(times)" class="input_custom">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <ul class="sunmmary">
+        <li ng-repeat="obj in sunmmary">
+            <span class="tit">{{obj.name}}<tooltip  data="obj.desc"></tooltip></span>
+            <span class="cen">{{obj.value}}</span>
+            <span class="bot">{{obj.ovalue}}</span>
+        </li>
+    </ul>
+</div>
+
+
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12 no-padding">
+        <div class="x_panel">
+            <div class="x_title">
+                <h2> 表格
+                    <small>数据行为分析</small>
+                </h2>
+                <div class="clearfix"></div>
+            </div>
+            <div class="">
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <flow-process data="flowProcessData"></flow-process>
+                </div>
+                <div class="col-md-9 col-sm-12 col-xs-12" style="margin-top: 63px;">
+                    <highchart config="chartConfig4"></highchart>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<filter-search></filter-search>
+
+<checkbox-search data="checkboxSearchData" on-change="checkboxSearchChange(data)"></checkbox-search>
+
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12 no-padding">
+        <div class="x_panel">
+            <div class="x_title">
+                <h2> 表格
+                    <small>数据行为分析</small>
+                </h2>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="x_content">
+
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12 no-padding">
+        <div class="x_panel">
+            <div class="x_title">
+                <h2> 表格
+                    <small>数据行为分析</small>
+                </h2>
+                <div class="clearfix"></div>
+            </div>
+            <div class="x_content">
+                <highchart id="chart2" config="chartConfig3"></highchart>
+            </div>
+        </div>
+
+    </div>
+</div>

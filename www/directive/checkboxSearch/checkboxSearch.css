@@ -1,0 +1,36 @@
+.checkboxs .checkbox{
+    margin-top:5px;
+}
+.checkbox_title{
+    border-bottom:0;
+    margin-bottom:0px;
+}
+.x_title .max_num{
+    color:red;
+}
+.panel_toolbox>li>a.collapselink{
+    padding:0px 10px;
+}
+.panel_toolbox{
+    margin-top: 9px;
+}
+.x_content{
+    max-height:300px;
+    transition: max-height 1s;
+    -moz-transition: max-height 1s; /* Firefox 4 */
+    -webkit-transition: max-height 1s; /* Safari 和 Chrome */
+    -o-transition: max-height 1s; /* Opera */
+    overflow: hidden;
+}
+.x_content.hide_content{
+    max-height:0;
+}
+.flicker{
+    animation: change 1s  ease-in  infinite ;
+    color:#f00;
+}
+@keyframes change {
+    0%{ text-shadow: 0 0 4px #f00}
+    50%{ text-shadow: 0 0 10px #f00}
+    100%{ text-shadow: 0 0 4px #f00}
+}

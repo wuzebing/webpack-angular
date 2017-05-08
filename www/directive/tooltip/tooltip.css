@@ -1,0 +1,31 @@
+.tip_conent{
+    position: absolute;
+    z-index: 9999;
+    left: -11px;
+    top: 30px;
+}
+.tip_conent .con{
+    display: block;
+    height: auto;
+    background-color: #eee;
+    padding: 10px;
+}
+.tip_conent .con span{
+    display: inline;
+}
+.tip_conent .arrow{
+    display: block;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: -13px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 16px solid #eeeeee;
+}
+.toop_tip_v{
+    position: relative;
+    display: inline-block;
+    width:10px;
+    height: 10px;
+}

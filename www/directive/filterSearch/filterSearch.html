@@ -1,0 +1,61 @@
+
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12 no-padding search_panel">
+        <div class="filter_top">
+           <div class="top_tit">高级搜索</div>
+            <div class="time">
+                <input daterangepicker type="daterange" ng-model="dates1" ranges="ranges" change="dataRangeChange(times)" class="input_custom">
+            </div>
+            <div class="fiter_type">
+                <a class="hour" ng-class="{true:'active',false:''}[data.filterType=='hour']" ng-click="changeFilterType('hour')">按时</a>
+                <a class="day" ng-class="{true:'active',false:''}[data.filterType=='day']" ng-click="changeFilterType('day')">按日</a>
+            </div>
+        </div>
+
+        <ul class="option_ul">
+            <li ng-repeat="fit in filter" ng-class="{true:'isSpread',false:''}[fit.isSpread]">
+                <div class="option_tit">
+                    {{fit.name}}
+                </div>
+                <div class="top_search" ng-class="{true:'no-margin-top',false:''}[fit.isSpread]">
+                    <div class="search_content">
+                        <input type="text" placeholder="快速搜索" ng-keyup="searchOption(fit)"/>
+                    </div>
+                </div>
+                <div class="row option_list">
+                    <div class="col-md-12 col-sm-12 col-xs-12 option_c">
+                        <div class="col-md-1 col-sm-2 col-xs-4 no-padding option_opt">
+                            <a class="opt all" ng-click="checkedAll(fit)">全部</a>
+                        </div>
+                        <div class="col-md-1 col-sm-2 col-xs-4 no-padding option_opt" ng-class="{'hide':opt.isHide}" ng-repeat="opt in fit.options">
+                            <a class="opt" ng-click="changeChecked(opt)" ng-class="{'active':opt.checked}">{{opt.name}}</a>
+                        </div>
+                    </div>
+                    <div class="option_more" ng-hide="fit.options.length<12">
+                        <a ng-click="showMore(fit)">更多<i class="fa" ng-class="{true:'fa-angle-double-up',false:'fa-angle-double-down'}[fit.isSpread]"></i></a>
+                    </div>
+                </div>
+            </li>
+            <!--<li>-->
+                <!--<div class="option_tit">-->
+                    <!--平台类型-->
+                <!--</div>-->
+                <!--<div class="row option_list">-->
+                    <!--<div class="col-md-12 col-sm-12 col-xs-12 option_c">-->
+                        <!--<div class="col-md-1 col-sm-2 col-xs-4 no-padding option_opt">-->
+                            <!--<a class="opt all">全部</a>-->
+                        <!--</div>-->
+                        <!--<div class="col-md-1 col-sm-2 col-xs-4 no-padding option_opt">-->
+                            <!--<a class="opt">appasdfasdfasdfasdf</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="option_more">-->
+                        <!--<a>更多<i class="fa fa-angle-double-down"></i></a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</li>-->
+        </ul>
+
+    </div>
+</div>
+

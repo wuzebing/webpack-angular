@@ -1,0 +1,11 @@
+<div class="toop_tip_v">
+    <i class="fa fa-question-circle" ng-click="ngmouseover()" ng-mouseover="ngmouseover()" ng-mouseout="ngmouseout()"></i>
+    <div class="tip_conent" ng-show="isShow">
+        <span class="arrow"></span>
+        <div class="con">
+            <eny ng-repeat="obj in formatData">
+                <span>{{obj}}</span><br/>
+            </eny>
+        </div>
+    </div>
+</div>

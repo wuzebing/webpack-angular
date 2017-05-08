@@ -1,0 +1,22 @@
+<ul class="passrateUl">
+    <li class="jt">
+        <span class="arrow arrow-down top">
+            <span class="value titvalue redColor">{{data.total.name}}</span>
+            <span class="value redColor">{{data.total.value}}</span>
+        </span>
+    </li>
+    <any ng-repeat="dt in data.dataset">
+        <li class="jt" ng-show="$index!=0">
+            <span class="arrow arrow-down">
+                <span class="value">{{dt.scale}}</span>
+            </span>
+        </li>
+        <li>
+            <div class="infoDetail">
+                <span class="name">{{dt.name}}</span>
+                <span class="num">{{dt.value}} {{dt.unit}}</span>
+                <span class="spe">|</span>
+            </div>
+        </li>
+    </any>
+</ul>

@@ -1,0 +1,29 @@
+
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12 no-padding">
+        <div class="x_panel">
+            <div class="x_title checkbox_title">
+                <h2> 指标<small>自定义指标</small></h2>
+                <ul class="nav navbar-right panel_toolbox">
+                    <li>
+                        <span class="tit_span" ng-class="{false:'',true:'flicker'}[flicker]">提示:可同时选择<span class="max_num">{{data.maxLength}}</span>项</span>
+                    </li>
+                    <li><a class="collapse-link collapselink" ng-click="toggle()"><i class="fa" ng-class="{true:'fa-chevron-up',false:'fa-chevron-down'}[toggleClass]"></i></a>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <div class="x_content" ng-class="{true:'',false:'hide_content'}[toggleContent]">
+                <div class="col-md-12 col-sm-12 col-xs-12 no-padding checkboxs fontawesome-icon-list">
+                    <div class="fa-hover col-md-1 col-sm-2 col-xs-4 no-padding" ng-repeat="obj in data.options">
+                        <a>
+                            <i class="fa" ng-class="{true:'fa-check-square-o',false:'fa-square-o'}[obj.checked]" ng-click="changeChosenStatus(obj)"></i>{{obj.name}}
+                            <!--<input type="checkbox" checked="false" ng-click="changeChosenStatus(obj)" value="{{obj.value}}">-->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+

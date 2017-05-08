@@ -1,0 +1,129 @@
+.img-circle.adminbc{
+	background-image: url('../../img/elong.png');
+	background-repeat: no-repeat;
+	width: 56px;
+    height: 56px;
+    background-size: 56px 56px;
+}
+highchart{
+	display: block;
+}
+
+.sunmmary{
+	padding-left:0;
+	background-color: rgb(249,249,249);
+	border:1px solid rgb(231,231,231);
+	height:80px;
+}
+.sunmmary li{
+	list-style: none;
+	float:left;
+	width:20%;
+	padding:8px 8px;
+}
+.sunmmary li:not(:first-child){
+	border-left:1px solid rgb(231,231,231);
+}
+.sunmmary li span{
+	display: block;
+	width: 100%;
+	height:22px;
+	line-height: 22px;
+	color:rgb(162,164,166);
+}
+.sunmmary li span.cen{
+	color:rgb(74,67,55);
+}
+.input_custom{
+	width:100%;
+	height:30px;
+	line-height: 30px;
+	border:1px solid #ccc;
+	border-radius: 4px;
+	text-align: center;
+}
+
+
+
+.count_conent{
+	height:336px;
+	border:1px solid #e6e9ed;
+}
+.count_conent .count_top{
+	height: 48px;
+}
+.count_conent .count_top .tit{
+	height: 24px;
+	line-height: 24px;
+	font-weight: 800;
+	overflow: hidden;
+}
+.count_conent .count_top .tit .left{
+	padding: 2px 10px;
+}
+.count_conent .count_top .tit .right{
+	color:rgb(59,136,224);
+	padding:2px 10px;
+	cursor:pointer;
+}
+
+.count_conent .count_top .desc{
+	height: 24px;
+	line-height: 24px;
+	overflow: hidden;
+	color:rgb(190,190,190);
+}
+.count_conent .count_top .desc .left{
+	padding: 2px 10px;
+}
+.count_conent .count_top .desc .right{
+	padding:2px 10px;
+}
+.count_conent .count_top .desc .right .fa{
+	cursor:pointer;
+	margin-right:4px;
+}
+.count_conent .count_top .desc .right .fa:hover{
+	color:rgb(59,136,224);
+}
+.count_conent .count_top .desc .right .fa.active{
+	color:rgb(59,136,224);
+}
+.count_conent .sper{
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	background-color: rgb(250,250,250);
+}
+.count_conent .sper .fa{
+	cursor:pointer;
+}
+.count_conent .sper .fa:hover{
+	color:rgb(59,136,224);
+}
+.count_conent .sper .fa-caret-left{
+	margin-right:10px;
+}
+.count_conent .sper .fa-caret-right{
+	margin-left:10px;
+}
+.count_conent .cont .count_num .unit{
+	font-size: 14px;
+}
+.count_conent .cont .count_num{
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 27px;
+	font-weight: 800;
+	color: #649be6;
+	display:inline-block;
+	width: 100%;
+}
+.count_conent .cont .show{
+	height:200px;
+	padding:0px 2px;
+}
+.min-padding{
+	padding:10px 5px;
+}

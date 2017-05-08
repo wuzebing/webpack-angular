@@ -1,0 +1,17 @@
+.title {
+    font-size: 18px;
+    color: #D0D;
+    border: 1px solid #ccc;
+    display: flex;
+}
+
+.img-bg {
+    background: url('../../img/ad-logo.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    &.big {
+        background: url('../../img/temp-1.jpg') no-repeat;
+        background-size:100% 100%;
+
+    }
+}
